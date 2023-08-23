@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		825CFE6B2A92FB3E005B401F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFE6A2A92FB3E005B401F /* main.swift */; };
+		825CFE732A92FB89005B401F /* CoreXLSX in Frameworks */ = {isa = PBXBuildFile; productRef = 825CFE722A92FB89005B401F /* CoreXLSX */; };
+		825CFE752A92FC54005B401F /* ExcelReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFE742A92FC54005B401F /* ExcelReader.swift */; };
+		825CFE772A92FC92005B401F /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFE762A92FC92005B401F /* Vector.swift */; };
+		825CFE792A92FE05005B401F /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFE782A92FE05005B401F /* Layer.swift */; };
+		825CFE832A9302D1005B401F /* MatrixVectorMultiplicationTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFE822A9302D1005B401F /* MatrixVectorMultiplicationTesting.swift */; };
+		825CFE872A9303A1005B401F /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFE7A2A92FEFB005B401F /* Matrix.swift */; };
+		825CFE892A9303B4005B401F /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFE882A9303B4005B401F /* Matrix.swift */; };
+		825CFE8B2A9303C3005B401F /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFE8A2A9303C3005B401F /* Vector.swift */; };
+		825CFE8D2A930E62005B401F /* ActivationFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFE8C2A930E62005B401F /* ActivationFunction.swift */; };
+		825CFE912A931C99005B401F /* CostFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFE902A931C99005B401F /* CostFunction.swift */; };
+		825CFE942A9382EF005B401F /* RowMulVectorTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFE932A9382EF005B401F /* RowMulVectorTesting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +36,29 @@
 /* Begin PBXFileReference section */
 		825CFE672A92FB3E005B401F /* neural-network */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "neural-network"; sourceTree = BUILT_PRODUCTS_DIR; };
 		825CFE6A2A92FB3E005B401F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		825CFE742A92FC54005B401F /* ExcelReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcelReader.swift; sourceTree = "<group>"; };
+		825CFE762A92FC92005B401F /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		825CFE782A92FE05005B401F /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
+		825CFE7A2A92FEFB005B401F /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		825CFE802A9302D1005B401F /* MatrixVectorMultiplicationTesting.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatrixVectorMultiplicationTesting.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		825CFE822A9302D1005B401F /* MatrixVectorMultiplicationTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixVectorMultiplicationTesting.swift; sourceTree = "<group>"; };
+		825CFE882A9303B4005B401F /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		825CFE8A2A9303C3005B401F /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		825CFE8C2A930E62005B401F /* ActivationFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationFunction.swift; sourceTree = "<group>"; };
+		825CFE902A931C99005B401F /* CostFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostFunction.swift; sourceTree = "<group>"; };
+		825CFE932A9382EF005B401F /* RowMulVectorTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowMulVectorTesting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		825CFE642A92FB3E005B401F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				825CFE732A92FB89005B401F /* CoreXLSX in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		825CFE7D2A9302D1005B401F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				825CFE692A92FB3E005B401F /* neural-network */,
+				825CFE812A9302D1005B401F /* MatrixVectorMultiplicationTesting */,
 				825CFE682A92FB3E005B401F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				825CFE672A92FB3E005B401F /* neural-network */,
+				825CFE802A9302D1005B401F /* MatrixVectorMultiplicationTesting.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +89,50 @@
 		825CFE692A92FB3E005B401F /* neural-network */ = {
 			isa = PBXGroup;
 			children = (
+				825CFE922A9321B8005B401F /* cost */,
+				825CFE8F2A931C7A005B401F /* tools */,
+				825CFE8E2A9311B7005B401F /* activation-functions-and-layer */,
 				825CFE6A2A92FB3E005B401F /* main.swift */,
 			);
 			path = "neural-network";
+			sourceTree = "<group>";
+		};
+		825CFE812A9302D1005B401F /* MatrixVectorMultiplicationTesting */ = {
+			isa = PBXGroup;
+			children = (
+				825CFE932A9382EF005B401F /* RowMulVectorTesting.swift */,
+				825CFE7A2A92FEFB005B401F /* Matrix.swift */,
+				825CFE822A9302D1005B401F /* MatrixVectorMultiplicationTesting.swift */,
+				825CFE8A2A9303C3005B401F /* Vector.swift */,
+			);
+			path = MatrixVectorMultiplicationTesting;
+			sourceTree = "<group>";
+		};
+		825CFE8E2A9311B7005B401F /* activation-functions-and-layer */ = {
+			isa = PBXGroup;
+			children = (
+				825CFE782A92FE05005B401F /* Layer.swift */,
+				825CFE8C2A930E62005B401F /* ActivationFunction.swift */,
+			);
+			path = "activation-functions-and-layer";
+			sourceTree = "<group>";
+		};
+		825CFE8F2A931C7A005B401F /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				825CFE742A92FC54005B401F /* ExcelReader.swift */,
+				825CFE762A92FC92005B401F /* Vector.swift */,
+				825CFE882A9303B4005B401F /* Matrix.swift */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		825CFE922A9321B8005B401F /* cost */ = {
+			isa = PBXGroup;
+			children = (
+				825CFE902A931C99005B401F /* CostFunction.swift */,
+			);
+			path = cost;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +151,29 @@
 			dependencies = (
 			);
 			name = "neural-network";
+			packageProductDependencies = (
+				825CFE722A92FB89005B401F /* CoreXLSX */,
+			);
 			productName = "neural-network";
 			productReference = 825CFE672A92FB3E005B401F /* neural-network */;
 			productType = "com.apple.product-type.tool";
+		};
+		825CFE7F2A9302D1005B401F /* MatrixVectorMultiplicationTesting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 825CFE842A9302D1005B401F /* Build configuration list for PBXNativeTarget "MatrixVectorMultiplicationTesting" */;
+			buildPhases = (
+				825CFE7C2A9302D1005B401F /* Sources */,
+				825CFE7D2A9302D1005B401F /* Frameworks */,
+				825CFE7E2A9302D1005B401F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MatrixVectorMultiplicationTesting;
+			productName = MatrixVectorMultiplicationTesting;
+			productReference = 825CFE802A9302D1005B401F /* MatrixVectorMultiplicationTesting.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +188,9 @@
 					825CFE662A92FB3E005B401F = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
+					825CFE7F2A9302D1005B401F = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 825CFE622A92FB3E005B401F /* Build configuration list for PBXProject "neural-network" */;
@@ -106,21 +202,52 @@
 				Base,
 			);
 			mainGroup = 825CFE5E2A92FB3E005B401F;
+			packageReferences = (
+				825CFE712A92FB89005B401F /* XCRemoteSwiftPackageReference "CoreXLSX" */,
+			);
 			productRefGroup = 825CFE682A92FB3E005B401F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				825CFE662A92FB3E005B401F /* neural-network */,
+				825CFE7F2A9302D1005B401F /* MatrixVectorMultiplicationTesting */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		825CFE7E2A9302D1005B401F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		825CFE632A92FB3E005B401F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				825CFE752A92FC54005B401F /* ExcelReader.swift in Sources */,
+				825CFE8D2A930E62005B401F /* ActivationFunction.swift in Sources */,
+				825CFE892A9303B4005B401F /* Matrix.swift in Sources */,
+				825CFE912A931C99005B401F /* CostFunction.swift in Sources */,
+				825CFE772A92FC92005B401F /* Vector.swift in Sources */,
 				825CFE6B2A92FB3E005B401F /* main.swift in Sources */,
+				825CFE792A92FE05005B401F /* Layer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		825CFE7C2A9302D1005B401F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				825CFE872A9303A1005B401F /* Matrix.swift in Sources */,
+				825CFE8B2A9303C3005B401F /* Vector.swift in Sources */,
+				825CFE942A9382EF005B401F /* RowMulVectorTesting.swift in Sources */,
+				825CFE832A9302D1005B401F /* MatrixVectorMultiplicationTesting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +385,44 @@
 			};
 			name = Release;
 		};
+		825CFE852A9302D1005B401F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DUC.MatrixVectorMultiplicationTesting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		825CFE862A9302D1005B401F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DUC.MatrixVectorMultiplicationTesting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -279,7 +444,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		825CFE842A9302D1005B401F /* Build configuration list for PBXNativeTarget "MatrixVectorMultiplicationTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				825CFE852A9302D1005B401F /* Debug */,
+				825CFE862A9302D1005B401F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		825CFE712A92FB89005B401F /* XCRemoteSwiftPackageReference "CoreXLSX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CoreOffice/CoreXLSX";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		825CFE722A92FB89005B401F /* CoreXLSX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 825CFE712A92FB89005B401F /* XCRemoteSwiftPackageReference "CoreXLSX" */;
+			productName = CoreXLSX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 825CFE5F2A92FB3E005B401F /* Project object */;
 }
