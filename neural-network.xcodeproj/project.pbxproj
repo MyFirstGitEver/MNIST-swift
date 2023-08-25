@@ -12,13 +12,15 @@
 		825CFE752A92FC54005B401F /* ExcelReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFE742A92FC54005B401F /* ExcelReader.swift */; };
 		825CFE772A92FC92005B401F /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFE762A92FC92005B401F /* Vector.swift */; };
 		825CFE792A92FE05005B401F /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFE782A92FE05005B401F /* Layer.swift */; };
-		825CFE832A9302D1005B401F /* MatrixVectorMultiplicationTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFE822A9302D1005B401F /* MatrixVectorMultiplicationTesting.swift */; };
+		825CFE832A9302D1005B401F /* MatrixTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFE822A9302D1005B401F /* MatrixTesting.swift */; };
 		825CFE872A9303A1005B401F /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFE7A2A92FEFB005B401F /* Matrix.swift */; };
 		825CFE892A9303B4005B401F /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFE882A9303B4005B401F /* Matrix.swift */; };
 		825CFE8B2A9303C3005B401F /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFE8A2A9303C3005B401F /* Vector.swift */; };
 		825CFE8D2A930E62005B401F /* ActivationFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFE8C2A930E62005B401F /* ActivationFunction.swift */; };
 		825CFE912A931C99005B401F /* CostFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFE902A931C99005B401F /* CostFunction.swift */; };
-		825CFE942A9382EF005B401F /* RowMulVectorTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFE932A9382EF005B401F /* RowMulVectorTesting.swift */; };
+		825CFE942A9382EF005B401F /* VectorTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFE932A9382EF005B401F /* VectorTesting.swift */; };
+		825CFEF42A95A315005B401F /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFEF32A95A315005B401F /* ImageProcessor.swift */; };
+		825CFF802A9602CD005B401F /* SimpleNeuralNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CFF7F2A9602CD005B401F /* SimpleNeuralNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,12 +43,14 @@
 		825CFE782A92FE05005B401F /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
 		825CFE7A2A92FEFB005B401F /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		825CFE802A9302D1005B401F /* MatrixVectorMultiplicationTesting.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatrixVectorMultiplicationTesting.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		825CFE822A9302D1005B401F /* MatrixVectorMultiplicationTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixVectorMultiplicationTesting.swift; sourceTree = "<group>"; };
+		825CFE822A9302D1005B401F /* MatrixTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixTesting.swift; sourceTree = "<group>"; };
 		825CFE882A9303B4005B401F /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		825CFE8A2A9303C3005B401F /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
 		825CFE8C2A930E62005B401F /* ActivationFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationFunction.swift; sourceTree = "<group>"; };
 		825CFE902A931C99005B401F /* CostFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostFunction.swift; sourceTree = "<group>"; };
-		825CFE932A9382EF005B401F /* RowMulVectorTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowMulVectorTesting.swift; sourceTree = "<group>"; };
+		825CFE932A9382EF005B401F /* VectorTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorTesting.swift; sourceTree = "<group>"; };
+		825CFEF32A95A315005B401F /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+		825CFF7F2A9602CD005B401F /* SimpleNeuralNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNeuralNetwork.swift; sourceTree = "<group>"; wrapsLines = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 				825CFE8F2A931C7A005B401F /* tools */,
 				825CFE8E2A9311B7005B401F /* activation-functions-and-layer */,
 				825CFE6A2A92FB3E005B401F /* main.swift */,
+				825CFF7F2A9602CD005B401F /* SimpleNeuralNetwork.swift */,
 			);
 			path = "neural-network";
 			sourceTree = "<group>";
@@ -100,9 +105,9 @@
 		825CFE812A9302D1005B401F /* MatrixVectorMultiplicationTesting */ = {
 			isa = PBXGroup;
 			children = (
-				825CFE932A9382EF005B401F /* RowMulVectorTesting.swift */,
+				825CFE932A9382EF005B401F /* VectorTesting.swift */,
 				825CFE7A2A92FEFB005B401F /* Matrix.swift */,
-				825CFE822A9302D1005B401F /* MatrixVectorMultiplicationTesting.swift */,
+				825CFE822A9302D1005B401F /* MatrixTesting.swift */,
 				825CFE8A2A9303C3005B401F /* Vector.swift */,
 			);
 			path = MatrixVectorMultiplicationTesting;
@@ -123,6 +128,7 @@
 				825CFE742A92FC54005B401F /* ExcelReader.swift */,
 				825CFE762A92FC92005B401F /* Vector.swift */,
 				825CFE882A9303B4005B401F /* Matrix.swift */,
+				825CFEF32A95A315005B401F /* ImageProcessor.swift */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -232,6 +238,8 @@
 			files = (
 				825CFE752A92FC54005B401F /* ExcelReader.swift in Sources */,
 				825CFE8D2A930E62005B401F /* ActivationFunction.swift in Sources */,
+				825CFEF42A95A315005B401F /* ImageProcessor.swift in Sources */,
+				825CFF802A9602CD005B401F /* SimpleNeuralNetwork.swift in Sources */,
 				825CFE892A9303B4005B401F /* Matrix.swift in Sources */,
 				825CFE912A931C99005B401F /* CostFunction.swift in Sources */,
 				825CFE772A92FC92005B401F /* Vector.swift in Sources */,
@@ -246,8 +254,8 @@
 			files = (
 				825CFE872A9303A1005B401F /* Matrix.swift in Sources */,
 				825CFE8B2A9303C3005B401F /* Vector.swift in Sources */,
-				825CFE942A9382EF005B401F /* RowMulVectorTesting.swift in Sources */,
-				825CFE832A9302D1005B401F /* MatrixVectorMultiplicationTesting.swift in Sources */,
+				825CFE942A9382EF005B401F /* VectorTesting.swift in Sources */,
+				825CFE832A9302D1005B401F /* MatrixTesting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

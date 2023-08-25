@@ -124,6 +124,38 @@ struct Vector : Codable {
         
         return v
     }
+    
+    mutating func normalize() {
+        var magnitude = 0.0
+        
+        for i in (0..<points.count) {
+            magnitude += points[i] * points[i]
+        }
+        
+        magnitude = magnitude.squareRoot()
+        
+        if magnitude == 0 {
+            return
+        }
+        
+        for i in (0..<points.count) {
+            points[i] /= magnitude
+        }
+    }
+    
+    mutating func concat(v: Vector) {
+        var newVectorData = Array.init(repeating: 0.0, count: size + v.size)
+        
+        for i in (0..<size) {
+            newVectorData[i] = points[i]
+        }
+        
+        for i in (size..<(v.size + size)) {
+            newVectorData[i] = v[i - size]
+        }
+        
+        points = newVectorData
+    }
  
     static func *(v1 : Vector, v2 : Vector) -> Double {
         var total : Double = 0
@@ -171,7 +203,7 @@ struct Vector : Codable {
         var result = Vector(v1.size)
         
         for i in (0..<result.size) {
-            result[i] = v1[i] / v2[i]
+            result[i] = v1[i] / (v2[i] + 1e-8)
         }
         
         return result

@@ -20,7 +20,7 @@ class CrossEntropy : CostFunction {
     func errorOnDataset(a: Vector, label: Vector) throws -> Double {
         for vecIndex in (0..<label.size) {
             if label[vecIndex] == 1 {
-                return -log(a[vecIndex] + 1e-8)
+                return -log(abs(a[vecIndex] + 1e-8))
             }
         }
         

@@ -53,11 +53,19 @@ class Layer {
             b = try b - (firstMomentB / secondMomentB.sqrt()).scaled(factor: learningRate)
         }
     
-    func loadW(data: [[Double]]) {
-        self.W = Matrix(data: data)
+    func loadW(data: Data) throws {
+        self.W = try JSONDecoder().decode(Matrix.self, from: data)
     }
     
-    func loadB(data: [Double]) {
-        self.b = Vector(data: data)
+    func loadB(data: Data) throws {
+        self.b = try JSONDecoder().decode(Vector.self, from: data)
+    }
+    
+    func getWData() throws -> Data {
+        return try JSONEncoder().encode(W)
+    }
+
+    func getBData() throws -> Data {
+        return try JSONEncoder().encode(b)
     }
 }

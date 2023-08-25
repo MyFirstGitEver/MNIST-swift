@@ -66,5 +66,22 @@ final class RowMulVectorTesting: XCTestCase {
             XCTAssertTrue(matrix.identical(mat: results[index]))
         }
     }
-
+    
+    func testConcat() {
+        var v = Vector(data: [3, 5, 1, 6])
+        v.concat(v: Vector(data: [5, 3, 0]))
+        
+        XCTAssertTrue(v.identical(Vector(data: [3, 5, 1, 6, 5, 3, 0])))
+    }
+    
+    func testNormalise() {
+        var v1 = Vector(data: [2, 0])
+        var v2 = Vector(data: [2, 1, 2])
+        
+        v1.normalize()
+        v2.normalize()
+        
+        XCTAssertTrue(v1.identical(Vector(data: [1, 0])))
+        XCTAssertTrue(v2.identical(Vector(data: [2.0 / 3.0, 1.0 / 3.0, 2.0 / 3.0])))
+    }
 }

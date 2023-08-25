@@ -11,7 +11,7 @@ enum MatrixError : Error {
     case WRONG_SIZE
 }
 
-struct Matrix {
+struct Matrix : Codable {
     private var entries : [[Double]] = []
     
     init(firstDimension: Int, secondDimension: Int) {

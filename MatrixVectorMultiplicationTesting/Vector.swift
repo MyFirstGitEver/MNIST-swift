@@ -37,6 +37,34 @@ struct Vector : Codable {
         return true
     }
     
+    mutating func normalize() {
+        var magnitude = 0.0
+        
+        for i in (0..<points.count) {
+            magnitude += points[i] * points[i]
+        }
+        
+        magnitude = magnitude.squareRoot()
+        
+        for i in (0..<points.count) {
+            points[i] /= magnitude
+        }
+    }
+    
+    mutating func concat(v: Vector) {
+        var newVectorData = Array.init(repeating: 0.0, count: size + v.size)
+        
+        for i in (0..<size) {
+            newVectorData[i] = points[i]
+        }
+        
+        for i in (size..<(v.size + size)) {
+            newVectorData[i] = v[i - size]
+        }
+        
+        points = newVectorData
+    }
+    
     mutating func randomise() {
         for i in 0..<size {
             points[i] = Double.random(in: 0...1)
